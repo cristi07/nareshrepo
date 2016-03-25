@@ -1,0 +1,20 @@
+<project name="antclass" basedir="." default="comedy">
+
+
+<target name="singer">
+	<echo message="balu is a singer"/>
+	<echo>yesudaas is a singer 
+	</echo>
+</target>
+
+<target name="dancer" depends="singer">
+	<echo message="michel is a dancer"/>
+	<echo>prabhudev is a dancer 
+	</echo>
+</target>
+
+<target name="comedy" depends="dancer">
+	<echo message="joker is a comedian"/>
+</target>
+
+</project>
